@@ -48,8 +48,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
 }
 
 h1 {
@@ -64,7 +63,7 @@ p {
 
 section > aside {
   background: #1d204b;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem;
 }
 
 aside.content-area {
@@ -111,7 +110,7 @@ h1.hours::after {
 aside.profile {
   background: #5746ea;
   padding: 1.5rem;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 1rem;
 }
 
 p.wrapper {
