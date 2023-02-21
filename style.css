@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  /* background: rgba(146, 146, 146, 0.266);
+  outline: dotted 2px; */
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  background-color: #0d1323;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "profile . . ."
+    "profile . . .";
+  gap: 2rem;
+  margin: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  color: #9fa1d2;
+}
+
+section > aside {
+  background: #1d204b;
+  border-radius: 1rem 1rem 0 0;
+}
+
+aside.content-area {
+  min-width: 214px;
+}
+
+aside.content-area:hover {
+  background: #34397b;
+}
+
+img.meat-ball-menu {
+  content: url("images/icon-ellipsis.svg");
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+img.meat-ball-menu:hover {
+  content: url(images/icon-ellipsis-white.svg);
+}
+
+section.profile {
+  grid-area: profile;
+  background: #1d204b;
+  border-radius: 1rem;
+}
+
+aside.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+p.last-week::after {
+  content: "hrs";
+}
+
+h1.hours::after {
+  content: "hrs";
+}
+
+aside.profile {
+  background: #5746ea;
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+p.wrapper {
+  font-weight: 500;
+  color: white;
+}
+
+aside.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+aside.options > p {
+  cursor: pointer;
+}
+
+aside.options > p:hover {
+  color: white;
+}
+
+#weekly {
+  color: white;
+}
+
+div.profile {
+  max-width: 13ch;
+  margin: 0 0 2rem 0;
+}
+
+aside.profile > img {
+  width: 5rem;
+  border: 3px solid white;
+  border-radius: 5rem;
+  margin: 1rem 0 2rem;
+}
+
+aside.hours {
+  padding: 1.5rem;
+}
+
+section.work {
+  background-image: url(images/icon-work.svg);
+  background-color: hsl(15, 100%, 70%);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section.play {
+  background-image: url(images/icon-play.svg);
+  background-color: hsl(195, 74%, 62%);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section.study {
+  background-image: url(images/icon-study.svg);
+  background-color: #ff5e7d;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section.exercise {
+  background-image: url(images/icon-exercise.svg);
+  background-color: hsl(145, 58%, 55%);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section.social {
+  background-image: url(images/icon-social.svg);
+  background-color: hsl(264, 64%, 52%);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+section.self-care {
+  background-image: url(images/icon-self-care.svg);
+  background-color: hsl(43, 84%, 65%);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+@media only screen and (max-width: 865px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  html {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section.profile {
+    padding-top: 0;
+  }
+
+  section {
+    padding: 3rem 0 0 0;
+  }
+
+  aside.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  aside.options {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  div.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  aside.profile > img {
+    margin: 0;
+  }
+}
